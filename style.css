@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-image: url('images/pattern-background-mobile.svg');
+  background-color: hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  display: grid;
+  place-content: center;
+}
+
+.card {
+  max-width: 320px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 1rem;
+  overflow: hidden;
+  color: hsl(224, 23%, 55%);
+}
+
+.card__content {
+  display: grid;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+p {
+  line-height: 1.5;
+}
+
+.card__order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 1rem;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+button.change {
+  border: 0;
+  background-color: hsl(225, 100%, 98%);
+  color: hsl(245, 75%, 52%);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.card__buttons {
+  display: grid;
+  gap: 1rem;
+}
+
+button.button {
+  border: 0;
+  border-radius: 0.5rem;
+  padding-block: 1rem;
+  color: hsl(225, 100%, 98%);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button.proceed {
+  background-color: hsl(245, 75%, 52%);
+}
+
+button.cancel {
+  background-color: hsl(225, 100%, 98%);
+  color: hsl(224, 23%, 55%);
+}
+
+@media (min-width: 600px) {
+  body {
+    background-image: url('images/pattern-background-desktop.svg');
+    
+  }
+}
